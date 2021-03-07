@@ -60,3 +60,6 @@ Se remplaza los href por routerLink, ejemplo:
     </nav>
 
 ```
+
+Cada componente que requiera usar de Router Link necesitara que su modulo respectivo tenga iumportado RouterModule, no se podran usar las propiedades de Router link como:
+routerLink, routerLinkActive, routerLinkActiveOptions
