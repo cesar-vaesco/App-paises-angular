@@ -47,3 +47,16 @@ El archivo que contiene las rutas es llamado  app-routing.module.ts
     </div>
 
     ```
+
+## Router Link
+
+Esta directiva permite navegar hacia las rutas sin hacer refresh o recargar la página; al estar creando una SPA y si se hace un reflesh, se perdería el estado de la aplicación.
+
+Se remplaza los href por routerLink, ejemplo:
+```
+    <nav>
+    <a routerLink="/home">Inicio</a>
+    <a routerLink="/posts">Posts</a>
+    </nav>
+
+```
