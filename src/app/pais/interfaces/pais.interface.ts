@@ -1,3 +1,7 @@
+/** Interfaz generada de la petición get a: https://restcountries.eu/rest/v2/name/me */
+/** La respuesta es usada para generar la interfaz en la pag https://app.quicktype.io/ */
+/** Para que la interfaz sea creada en el lenguaje requerido hay que especificarlo en la interfaz grafica de la página web */
+
 export interface Country {
     name: string;
     topLevelDomain: string[];
