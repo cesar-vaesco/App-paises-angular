@@ -18,10 +18,12 @@ export class PorPaisComponent {
 
 
     //   Acción que se genera al enviar el formulario
-    buscar() {
+    buscar( termino: string) {
         this.hayError = false;
-        console.log(this.termino);
-        this.PaisService.buscarPais(this.termino)
+        this.termino = termino;
+        // console.log(this.termino);
+
+        this.PaisService.buscarPais(termino)
             .subscribe((paises) => {
                 console.log(paises);
                 this.paises = paises;
