@@ -15,6 +15,8 @@ export class PaisInputComponent implements OnInit {
     @Output() onDebounce: EventEmitter<string> = new EventEmitter();
 
 
+    @Input() placeholder:string ='';
+
     debouncer: Subject<string> = new Subject();
 
 
@@ -22,7 +24,7 @@ export class PaisInputComponent implements OnInit {
 
     ngOnInit() {
         this.debouncer
-        .pipe(debounceTime(300))
+        .pipe(debounceTime(100))
         .subscribe(valor => {
             this.onDebounce.emit(valor);
         })
