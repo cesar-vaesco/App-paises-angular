@@ -14,7 +14,7 @@ export class PorPaisComponent {
     hayError: boolean = false;
     paises:Country[] =[];
 
-    constructor(private PaisService: PaisService) { }
+    constructor(private paisService: PaisService) { }
 
 
     //   Acción que se genera al enviar el formulario
@@ -23,7 +23,7 @@ export class PorPaisComponent {
         this.termino = termino;
         // console.log(this.termino);
 
-        this.PaisService.buscarPais(termino)
+        this.paisService.buscarPais(termino)
             .subscribe((paises) => {
                 console.log(paises);
                 this.paises = paises;
