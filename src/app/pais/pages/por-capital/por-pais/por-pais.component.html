@@ -12,7 +12,21 @@
             </app-pais-input>
         </div>
     </div>
-    </div>
+</div>
+
+<ul *ngIf="mostrarSugerencias" class="list-group mt-2">
+    <li *ngFor="let pais of paisesSugeridos" class="list-group-item list-group-item-action bg-light mb-1">
+        <a class="nav-link text-dark" [routerLink]="['/pais', pais.alpha2Code]">
+            <strong> {{ pais.name }} </strong>
+        </a>
+    </li>
+    <li class="list-group-item list-group-item-action" (click)="buscarSugerido( termino )">
+        <a class="nav-link">
+            Buscar "{{ termino }}"
+        </a>
+    </li>
+</ul>
+
 <hr>
 
 <div *ngIf="hayError" class="alert alert-danger">
