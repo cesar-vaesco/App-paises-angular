@@ -6,8 +6,8 @@
 <ng-template #divPais>
 
     <div class="row">
-        <div class="col-12 mb-5">
-            <h1>Pais: <small> {{pais.name}}</small></h1>
+        <div class="col-10 mb-5 ">
+            <h1 class="text-dark bg-light p-3">Pais: <small> {{pais.name}}</small></h1>
         </div>
     </div>
 
@@ -18,7 +18,7 @@
         </div>
 
         <div class="col-6">
-            <h3 class="list-group-item-primary p-3">Información</h3>
+            <h3 class="text-dark bg-light p-3">Información</h3>
             <ul class="list-group border border-primary rounded">
                 <li class="list-group-item  mb-2">
                     <strong>Población: {{pais.population | number}}</strong>
@@ -41,7 +41,7 @@
 
     <h3 class="mt-5">Traducciones</h3>
     <div class="row">
-        <div class="col">
+        <div class="col-10">
             <span class="badge bg-primary mr-1">{{pais.translations.br}}</span>
             <span class="badge bg-primary mr-1">{{pais.translations.de}}</span>
             <span class="badge bg-primary mr-1">{{pais.translations.es}}</span>
